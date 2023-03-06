@@ -37,7 +37,7 @@ class ML:
         del self.loaded_models[least_frequent_model]
         self.loaded_models[new_model] = self.load_weights(new_model)
         # reset the request counter for the unloaded model
-        self.request_counters[least_frequent_model] = 4
+        self.request_counters[least_frequent_model] = 2
         # print(self.loaded_models)
 
 
